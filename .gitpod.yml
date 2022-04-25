@@ -7,7 +7,7 @@ tasks:
     init: echo 'init script' # runs during prebuild
     command: echo 'start script'
   - name: create-db
-    init: RUN mysql -e "CREATE DATABASE userauth;"
+    init: mysql -e "CREATE DATABASE userauth;"
 
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
